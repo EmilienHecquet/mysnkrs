@@ -226,3 +226,95 @@ line-height: 150%;
 color: #666666;
 padding-bottom: 36px;
 }
+
+.marque h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 72px;
+
+/* Antracite Grey */
+
+color: #383838;
+}
+
+.marque p{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+
+/* Antracite Grey */
+
+color: #383838;
+}
+.marque button{
+    border-radius: 30px;
+    border: solid 1px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 260px;
+    background-color: #085852;
+    color: white;
+}
+
+.client h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 138% */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Text/Title Text */
+
+color: #333333;
+}
+.client h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Text/Title Text */
+
+color: #333333;
+}
+.client p{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+
+/* Text/Body Text */
+
+color: #666666;
+
+}
+.client h6{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 138% */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Text/Title Text */
+
+color: #333333;
+}
