@@ -1,7 +1,7 @@
 const path = require('path')
 
 export default {
-  root: path.resolve(__dirname, 'src'),
+  root: path.resolve(__dirname),
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
@@ -11,5 +11,5 @@ export default {
     port: 8080,
     hot: true
   },
-  base: '/mysnkrs/src'
+  base: '/mysnkrs/'
 }
