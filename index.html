@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MySnkrs</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -17,11 +20,11 @@
               <div class="col-sm-3 header-logo" style=" text-align: center;">
                   <a href=""><img src="logo.png" alt="" style="max-width: 163px;"></a>
               </div>
-              <div class="col-sm-2 offset-md-3" id="header-qui">
-                <a href=""><span>Qui sommes-nous?</span></a>
+              <div class="col-sm-2 offset-md-2" id="header-qui">
+                <a href="#sommes"><span>Qui sommes-nous?</span></a>
               </div>
               <div class="col-sm-2" id="header-propos">
-                <a href=""><span>Pourquoi nous choisir ?</span></a>
+                <a href="#pourquoi"><span>Pourquoi nous choisir ?</span></a>
               </div>
               
               <div class="col-sm-2" id="header-produits">
@@ -30,19 +33,37 @@
           </div>
       </div>
 
-      <div class="container-fluid contact align-items-center bloc" style="padding-bottom:143px; padding-top: 38px;">
+      <section class="top-nav">
+        <div>
+          <img src="logo.png" alt="" style="max-width: 80px;">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a href="#pourquoi" style="color: black;">Pourquoi nous choisir ?</a></li>
+          <li><a href="#sommes" style="color: black;">Qui sommes-nous?</a></li>
+          
+          <li><a href="https://ax1xgyxwsxy.typeform.com/to/N7TrtWIP" target="_blank"><button class="header-button">Voir nos produits</button></a></li>
+        </ul>
+      </section>
+
+      <div class="container-fluid contact align-items-center bloc" style="padding-bottom:143px; padding-top: 38px; background-color: #FAFAFA;">
           <div class="row">
-            <div class="col-md-5 offset-xl-1 contact-prez align-self-center">
-              <h2 style="padding-bottom: 44px;">Lorem ipsum dolor 
-                sit in amet consectur.
+            <div class="col-lg-5 offset-lg-1 contact-prez align-self-center">
+              <h2 style="padding-bottom: 44px;">Deviens unique, crée
+                la paire de tes rêves.
               </h2>
               <p style="padding-bottom: 64px;">
-                Lorem ipsum dolor sit amet consectetur. Dictum integer cursus purus consectetur turpis auctor in.
+                MYSNKRS te permet de rencontrer des artistes talentueux en matière de sneakers et de confectionner ta paire unique.
               </p>
-              <button id="button-decouvrir" style="margin-right: 20px;">Découvrir le site</button>
-              <button id="button-contacter">Nous contacter</button>
+              <div class="div-button">
+                <a href="https://ax1xgyxwsxy.typeform.com/to/N7TrtWIP" target="_blank"><button id="button-decouvrir" style="margin-right: 20px;">Découvrir le site</button></a>
+                <a href="https://ax1xgyxwsxy.typeform.com/to/N7TrtWIP" target="_blank"><button id="button-contacter" style="margin-top: 20px;">Nous contacter</button></a>
+              </div>
           </div>
-          <div class="col-md-6  align-self-center " style="text-align: center;">  
+          <div class="col-lg-6  align-self-center dessin" style="text-align: center;">  
               <img src="image.png" alt="" style="max-width: 434px;">
           </div>
         </div>
@@ -56,39 +77,40 @@
             </div>
         </div>
         
-        <div class="container-fluid presentation align-items-center bloc" style="padding-bottom: 120px;">
-            <div class="row">
-              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text1">
+        <div class="container-fluid presentation align-items-center bloc" style="padding-bottom: 120px;" id="sommes">
+            <div class="row" style="background: #FAFAFA;
+            border-radius: 30px 0px 0px 30px;">
+              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text1 order-sm-1">
                 <h3>Découvre des artistes
                   talentueux
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor maximus aliquam. Nunc nec pharetra dui. Nunc laoreet iaculis suscipit. Etiam fermentum lacus nisi, auctor ultricies odio consectetur ac.
+                  En effet nous collaborons avec des artistes très talentueux qui se donnent à 110% pour personnaliser et mettre en valeur des paires de baskets uniques pour votre plus grande joie. 
                 </p>
               </div>
-              <div class="col-sm-6 presentation-bloc">
+              <div class="col-sm-6 presentation-bloc order-sm-2">
                 <img src="Rectangle10.png" alt="">
               </div>
-              <div class="col-sm-6 presentation-bloc">
-                <img src="Rectangle6.png" alt="">
-              </div>
-              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text2">
+              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text2 order-sm-4">
                 <h3>
                   Trouve la paire qui te convient
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor maximus aliquam. Nunc nec pharetra dui. Nunc laoreet iaculis suscipit. Etiam fermentum lacus nisi, auctor ultricies odio consectetur ac.
+                  Grâce à nos 11 partenaires de qualité vous pouvez facilement trouver la paire de vos rêves en 2 clics sur notre site web et choisir une paire personnalisée par l’un de nos artistes.
                 </p>
               </div>
-              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text3">
+              <div class="col-sm-6 presentation-bloc order-sm-3">
+                <img src="Rectangle6.png" alt="">
+              </div>
+              <div class="col-sm-6 align-self-center presentation-bloc presentation-bloc-text3 order-sm-5">
                 <h3>
                   Personalise les sneakers de tes rêves
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor maximus aliquam. Nunc nec pharetra dui. Nunc laoreet iaculis suscipit. Etiam fermentum lacus nisi, auctor ultricies odio consectetur ac.
+                  Nous mettons à votre disposition un choix énorme de baskets déjà personnalisé, des thèmes, des motifs et des couleurs créés spécialement par nos artistes que vous pourrez choisir et mettre dans vos baskets pour vous satisfaire.
                 </p>
               </div>
-              <div class="col-sm-6 presentation-bloc ">
+              <div class="col-sm-6 presentation-bloc order-sm-6">
                 <img src="Rectangle9.png" alt="">
               </div>
             </div>
@@ -107,14 +129,13 @@
           </div>
         </div>
 
-        <div class="container-fluid align-items-center bloc">
+        <div class="container-fluid align-items-center bloc" id="pourquoi">
             <div class="row">
                 <div class="col-md-8 align-self-center stats">
                     <h3>Pourquoi nous choisir ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat. </p>
+                    <p>Nous vous proposons un large choix de modèles, en collaboration avec nos 11 marques de qualité, elles nous fournissent leurs paires les plus vendues afin de mettre à l’honneur le talent de
+                      nos 50 artistes Sneakers pour la réalisation de vos paires
+                      uniques. Alors pourquoi pas vous ? </p>
                     <div class="row" style="padding-bottom: 60px;">
                       <div class="col-3">
                         <span>50</span>
@@ -131,8 +152,8 @@
                     </div>
                     <a href="">Voir notre catalogue</a>
                 </div>
-                <div class="col-md-4 o">
-                    <img src="Rectangle4.png" alt="">
+                <div class="col-md-4">
+                    <img src="Rectangle4.png" alt="" id="stats-img">
                 </div>
             </div>
         </div>
@@ -144,62 +165,55 @@
                   confiance</h2>
               </div>
               <div class="col-sm-4 align-self-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. </p>
+                <p>Toutes ces marques nous font confiance parce qu'on a fait nos preuves à leurs côtés et leurs avons montrés notre qualité de travail et notre sérieux ainsi que nos idées originales qui ont suscité leurs intérêt. </p>
               </div>
-              <div class="col-sm-4 align-self-center" style="padding-left:75px;">
+              <div class="col-sm-4 align-self-center">
                 <button>Voir toutes les marques</button>
               </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-3 align-self-center">
+            <div class="row marque-img">
+                <div class="col-sm-3 align-self-center" style="width:50% ;">
                   <img src="Adidas-Logo 1.png" alt="">
                 </div>
-                <div class="col-sm-3 align-self-center" >
+                <div class="col-sm-3 align-self-center" style="width:50% ;" >
                   <img src="image 3.png" alt="">
                 </div>
-                <div class="col-sm-3 align-self-center" >
+                <div class="col-sm-3 align-self-center" style="width:50% ;" >
                   <img src="image 4.png" alt="">
                 </div>
-                <div class="col-sm-3 align-self-center">
+                <div class="col-sm-3 align-self-center" style="width:50% ;">
                   <img src="image 5.png" alt="">
                 </div>
             </div>
         </div>
 
 
-        <div class="container-fluid marque bloc" style="padding-top:250px ;">
+        <div class="container-fluid clients bloc" style="padding-top:250px;">
           <h2 style="padding-bottom: 56px;">Nos chers clients</h2>
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row" >
+                <div class="col-md-6">
                   <div class="row">
-                    <div class="col-sm-6">
-                      <img src="Container.png" alt="">
+                    <div class="col-md-6 " style="text-align:center;">
+                      <img src="Container.png" alt="" style="max-width: 80%; min-width: 180px;">
                     </div>
-                    <div class="col-sm-6 align-self-center">
-                      <h3 style="padding-bottom:16px ;">Lorem Ipsum</h3>
-                      <p style="padding-bottom: 48px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore.</p>
-                      <h6>Lorem ipsum</h6>
+                    <div class="col-md-6 align-self-center client">
+                      <h3 style="padding-bottom:16px ;">Sarah</h3>
+                      <p style="padding-bottom: 48px;">Paire de baskets de très bonne qualité, rien à dire et motifs très beaux avec des couleurs vives, conforme à la description
+                        Merci !</p>
+                      <h6>08/12/2022</h6>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                   <div class="row">
-                    <div class="col-sm-6">
-                      <img src="Container2.png" alt="">
+                    <div class="col-md-6 " style="text-align:center;">
+                      <img src="Container2.png" alt="" style="max-width: 80%; min-width: 180px;"> 
                     </div>
-                    <div class="col-sm-6 align-self-center">
-                      <h3 style="padding-bottom:16px ;">Lorem Ipsum</h3>
-                      <p style="padding-bottom: 48px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore.</p>
-                      <h6>Lorem ipsum</h6>
+                    <div class="col-md-6 align-self-center client">
+                      <h3 style="padding-bottom:16px ;">Valentin</h3>
+                      <p style="padding-bottom: 48px;"> Belle paire de basket, tout est nickel franchement je suis pas déçue.</p>
+                      <h6>06/12/2022</h6>
                     </div>
                   </div>
                 </div>
@@ -208,20 +222,29 @@
 
         <div class="container-fluid mockup bloc" style="padding-top:240px ;">
             <div class="row">
-              <div class="col-sm-7 align-self-center">
-                <img src="logo.png" alt="" style="max-width: 163px; padding-bottom:200px ;">
+              <div class="col-lg-7 align-self-center">
+                <img src="logo.png" alt="" style="max-width: 163px; padding-bottom:200px ;" id="mockup-logo">
                 <h2>TES sneakers uniques
                   en quelques clics.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. </p>
-                  <button id="button-decouvrir">Découvrir le site</button>
+                <p>Notre site web et application ont été conçus par nos meilleurs designers et développeurs pour vous faciliter tout achat rapide, transaction et personnalisation des paires, grâce à eux commander un articles n’a jamais été aussi facile. </p>
+                <div class="row">
+                  <div class="col-lg-6 align-self-center center-block">
+                    <img src="mockup.png" alt="" id="img-mobile">
+                  </div>
+                  <div class="col-lg-6" style="text-align: center;">
+                    <a href="https://ax1xgyxwsxy.typeform.com/to/N7TrtWIP" target="_blank" style="text-align: center;">
+                      <button id="button-decouvrir" class="button-mockup">Découvrir le site</button>
+                    </a>
+                  </div>
+
+                </div>
+                  
+                  
               </div>
-              <div class="col-sm-5 d-flex align-items-end flex-column">
-                  <img src="mockup.png" alt="">
+              <div class="col-lg-5 d-flex align-items-end flex-column">
+                  <img src="mockup.png" alt="" style="max-width:436px;" id="img-desktop">
               </div>
-            </div>
+            </div>  
         </div>
       </div>
     <script type="module" src="./js/main.js"></script>

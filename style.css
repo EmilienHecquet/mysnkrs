@@ -2,13 +2,28 @@
 padding-top: 58px!important;
 padding-bottom: 58px!important;
 text-align: center;
+padding-left: 0 !important;
+max-width: 20.6% !important;
 }
+
+@media (max-width: 1200px){
+    
+    .offset-md-2 {
+    margin-left: 6.666667% !important;
+}
+.col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 20.666667% !important;
+}
+}
+
 
 .header-button{
     background: #085852;
 border-radius: 30px;
 border: none;
-max-width: 175px;
+max-width: 300px;
+height: 48px;
 
 color: #FFFFFF;
 }
@@ -22,6 +37,27 @@ color: #FFFFFF;
 img{
     width: 100%;
 }
+@media all and (max-width:1000px) {
+    .div-button{
+    text-align: center !important;
+}
+    #unique{
+        font-size:38px !important;
+    }
+    .stats span{
+        font-size: 55px !important;
+    }
+
+    .marque, .clients{
+        padding-top: 180px !important;
+    }
+}
+@media all and (max-width:767px) {
+    #stats-img{
+        display: none;
+}
+}
+
 .contact h2{
     font-family: 'Poppins';
     font-style: normal;
@@ -54,6 +90,11 @@ color: #383838;
 #button-decouvrir{
     background: #085852;
     color: white;
+}
+@media  all and (max-width: 468px) {
+    #button-decouvrir{
+        margin: 0 !important;
+    }
 }
 #button-contacter{
     background: #FAFAFA;
@@ -122,7 +163,22 @@ color: #383838;
     .presentation-bloc-text3{
         padding: 0 140px !important;
     }
+    .dessin{
+        padding-top: 0px !important;
+    }
 }
+.dessin{
+    padding-top: 60px;
+}
+.presentation-bloc-text1{
+        padding: 40px 15px !important;
+    }
+    .presentation-bloc-text2{
+        padding: 40px 15px !important;
+    }
+    .presentation-bloc-text3{
+        padding: 40px 15px !important;
+    }
 
 #unique{
 font-family: 'Poppins';
@@ -227,6 +283,24 @@ color: #666666;
 padding-bottom: 36px;
 }
 
+@media all and (max-width: 1000px) {
+    .marque h2{
+        font-size: 36px !important;
+    }
+    .marque p{
+        font-size: 13px !important;
+    }
+    #img-mobile{
+        display: block !important;
+    }
+    #img-desktop{
+        display: none !important;
+    }
+}
+#img-mobile{
+    display: none;
+}
+
 .marque h2{
     font-family: 'Poppins';
 font-style: normal;
@@ -317,4 +391,64 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 /* Text/Title Text */
 
 color: #333333;
+}
+@media all and (max-width:768px) {
+    .client h6,.client p,.client h3,.client h2{
+        text-align: center !important;
+    }
+    .client p{
+        padding-bottom: 0 !important;
+    }
+    .client h6{
+        padding-bottom: 30px;
+    }
+    .client h3{
+        padding-top: 20px;
+    }
+}
+
+@media all and (max-width:575px) {
+    .button-mockup{
+        width: 100% !important;
+    }
+    #img-mobile{
+        max-width: 100% !important;
+        padding-bottom: 50px;
+    }
+    #mockup-logo{
+        padding-bottom: 50px !important;
+    }
+    .mockup{
+        padding-top: 70px !important;
+    }
+    .marque-img{
+        padding-top: 25px;
+    }
+}
+@media all and (min-width:576px) and (max-width:1000px) {
+    
+    #mockup-logo{
+        padding-bottom: 50px !important;
+    }
+    .button-mockup{
+        width: 65% !important;
+    }
+    .center-block{
+        padding: 0 120px;
+    }
+    .mockup{
+        padding-top: 70px !important;
+    }
+
+}
+@media all and (min-width:575px) and (max-width :750px) {
+    #img-mobile{
+        padding: 0 80px 50px 80px
+    }
+}
+
+@media all and (min-width:750px) and (max-width :1000px) {
+    #img-mobile{
+        padding: 0 180px
+    }
 }
